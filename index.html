@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Shoefie Official Site</title>
+    <style>
+        body{
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+        }
+        a:nth-child(1){
+            text-decoration: none;
+            color: black;
+        }
+        #offer{
+            background-color: #efb9b9;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer>span{
+            font-size: 18px;
+        }
+        #offer>span:nth-child(2){
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 0 35px 0 35px;
+        }
+        .nav>div:nth-child(1){
+            height: 50px;
+            background-color:rgb(246, 244, 244);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .nav>div:nth-child(1)>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 13px;
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(1)>a>img{
+            height: 21px;
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(2){
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(100, 100, 111, 0.2);
+            
+        }
+        #logo{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #links{
+            width: 40%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #links>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a{
+            margin-left: 0;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a>img{
+            width: 35px;
+        }
+        #cart{
+            width: 8%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 25%
+        }
+        .nav>div:nth-child(2)>div:nth-child(1){
+            width: 20%;
+        }
+        .nav>div:nth-child(2)>div:nth-child(1)>a>img{
+            width: 130px;
+            border-radius: 40px;
+        }
+        .nav>div:nth-child(3){
+            width: 98%;
+            margin: auto;
+            background-color: gainsboro;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav>div:nth-child(3)>span:nth-child(2){
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(3)>span>a{
+            color: rgb(87, 84, 84);
+        }
+        #top_section{
+            text-align: center;
+            padding: 0 18% 0 18%;
+        }
+        #top_section h1{
+            font-weight:lighter;
+            color: rgb(87, 84, 84);;
+        }
+        #top_section p{
+            font-weight:lighter;
+            font-size: 18px;
+        }
+        #top_section a{
+            text-decoration: none;
+        }
+        #top_section button{
+            height: 50px;
+            width: 28%;
+            background-color: white;
+            border: 1px solid rgb(111, 109, 109);
+            font-size: 15px;
+            margin-left: 25px;
+            font-weight: lighter;
+        }
+        #top_section button:hover{
+            background: rgb(87, 84, 84);
+            color: white;
+            border: 0;
+        }
+        #contact{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        #contact>div{
+            margin: 0 30px 0 150px;
+        }
+        #contact>div:nth-child(1)>span{
+            margin: 0 20px 0 20px;
+        }
+        #contact>div:nth-child(1)>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+        }
+        #contact>div:nth-child(2){
+            display: flex;
+            font-weight: bold;
+            width: 40%;
+        }
+        #contact>div:nth-child(2)>form{
+            margin-left: 20px;
+        }
+        #contact>div:nth-child(2)>form{
+            width: 60%;
+        }
+        #contact>div:nth-child(2)>form>input{
+            height: 25px;
+            width: 90%;
+        }
+        #contact>div:nth-child(2)>form>button{
+            height: 30px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84);
+        }
+        #footer{
+            background-color: rgba(100, 100, 111, 0.2);
+            padding-bottom: 60px;
+        }
+        #footer>#parant1{
+            width: 90%;
+            margin: auto;
+        }
+        #footer>#parant1>div:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+        #footer>#parant1>div:nth-child(1)>div{
+            width: 70%;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+            justify-content: end;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1)>a>img{
+            width:25px;
+            margin: 0 5px 0 5px;
+        }
+        #footer>#parant1>div:nth-child(3){
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #footer>#parant1>div:nth-child(3)>div{
+            width: 70%;
+
+        }
+        #footer>#parant1>div:nth-child(3) a{
+            display: block;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+        }
+        #footer2{
+            display: flex;
+            background-color: rgb(47, 45, 45);
+        }
+        #footer2>div:nth-child(1){
+            width: 40%;
+            padding-bottom: 250px;
+        }
+        #footer2>div:nth-child(1){
+            text-align: center;
+            margin-top: 25px;
+
+        }
+        #footer2>div:nth-child(1)>a{
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+            font-size: 12px;
+        }
+        #footer2>div:nth-child(2){
+            width: 50%;
+            margin-left: 120px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(1){
+            margin-top: 28px;
+            color: white;
+            font-size:13px ;
+            width: 100%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(2){
+            color: white;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(1){
+            width: 16%;
+            margin-left: 20%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+            width: 18%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(3){
+            width: 8%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+            width: 10%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(5){
+            width: 7%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+            width: 12%;
+            border-radius: 10px;
+            height: 45px;
+        }
+        #product{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        #product>div{
+            padding-bottom: 20px;
+        }
+        #product>div:hover{
+            cursor: pointer;
+        }
+        #offer2{
+            width:99%;
+            height: 70px;
+            margin: auto;
+            background-color: rgb(246, 187, 197);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer2>span{
+           font-size: 18px;
+        }
+        #offer2>img{
+            width: 90px;
+            margin-right: 70px;
+            margin-left: 5px;
+        }
+        #a2{
+            width: 98%;
+            display: block;
+            margin: auto;
+        }
+        #mid2{
+            text-align: center;
+            margin-bottom:15px ;
+            padding: 8px 28% 25px 28%;
+            background-color:rgba(167, 167, 172, 0.2); ;
+        }
+        #mid2>div>button{
+            width: 200px;
+            height: 40px;
+            margin-right: 25px;
+            font-size: 18px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid3{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #mid3>div{
+            width: 50%;
+            text-align: center;
+            margin-bottom: 150px;
+        }
+        #mid3 img{
+            width: 98%;
+
+        }
+        #mid3>div h1{
+            font-size: 28px;
+        }
+        #mid3 button{
+            width: 250px;
+            height: 30px;
+            margin-right: 25px;
+            font-size: 15px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid3 button:hover{
+            color:white;
+            background-color: black;
+        }
+        #mid3 p{
+            padding: 0 5% 0 5%;
+        }
+        #mid4{
+            text-align: center;
+            background-color:rgb(222, 211, 195);
+            padding-bottom: 80px;
+        }
+        #mid4 img{
+            display: block;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        #mid4>h1{
+            font-size: 45px;
+            margin-bottom: 0;
+        }
+        #mid4 p , #mid4 h1 , #mid4 div:nth-child(4){
+            padding: 0 28% 0 28%;
+        }
+        #mid4 button:nth-child(1){
+            width: 300px;
+            height: 35px;
+            margin-right: 25px;
+            font-size: 16px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid4 button:nth-child(2){
+            width: 200px;
+            height: 35px;
+            margin-right: 25px;
+            font-size: 16px;
+            color:rgb(113, 106, 106) ;
+            background-color: white;
+            border: 1px solid rgb(175, 169, 169);
+        }
+        #mid4 button:hover{
+            cursor: pointer;
+        }
+        #mid5{
+            width: 99%;
+            margin: auto;
+            margin-top: 28px;
+            margin-bottom: 35px;
+            padding: 15px 0 15px 0 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(38, 95, 142);
+        }
+        #mid5>div{
+            width: 99%;
+            padding: 15px 0 15px 0 ;
+            margin: auto;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+        }
+        #mid5>div>a{
+            color: white;
+        }
+        #mid5>div>a>span{
+            color: white;
+            font-weight: bolder;
+            margin-left: 75px;
+        }
+        #mid6{
+            width: 98%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        #mid6 img{
+            width: 95%;
+        }
+        #mid6 button{
+            height: 50px;
+            width:130px ;
+            background-color: white;
+            border: 0;
+            
+        }
+        #mid6>div>button{
+            position: relative;
+            top: -180px;
+        }
+        #mid6>div>button::before{
+            content: "";
+            position: absolute;
+            left:16%;
+            top: 38px;
+            width: 0%;
+            height: 2px;
+            background-color: black;
+        }
+        #mid6>div>button:hover::before{
+            width: 70%;
+            transition: all .2s linear;
+        }
+        #mid6 button:hover{
+            cursor: pointer;
+        }
+        #mid1{
+            width: 95%;
+            margin: auto;
+            background-color:rgb(234, 139, 139);
+            margin-bottom: 25px;
+        }
+        #mid1>div{
+            width: 50%;
+            min-height: 350px;
+            text-align: center;
+            margin: auto;
+            padding-top: 1px;
+            background-color: #efb9b9;;
+        }
+        #mid1 h1:nth-child(1){
+            font-size: 40px;
+            height: 35px;
+        }
+        #mid1 p:nth-child(2){
+            font-size: 30px;
+            height: 0px;
+            font-weight: bold;
+        }
+        #mid1 p:nth-child(3){
+            font-size:100px;
+            margin-top: 0;
+            height: 40px;
+            font-weight: bolder;
+        }
+        #mid1>div>div:nth-child(4){
+            background-color: black;
+            font-size: 25px;
+            color: white;
+            margin: 0 15% 0 15%;
+        }
+        #mid1 p:nth-child(5){
+            font-weight: bold;
+        }
+        #mid1>div>div:nth-child(6){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mid1>div>div:nth-child(6)>button{
+            width: 20%;
+            margin-left: 15px;
+            height: 35px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+        #mid1 p:nth-last-child(1){
+            font-size: 12px;
+            height: 35px;
+        }
+        #mid0{
+            display: none;
+        }
+        #mid0 img{
+            width: 100% ;
+        }
+        .hambuger{
+            display: none;
+        }
+        .bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
+        }
+        @media all and (min-width:700px) and (max-width:1000px){
+            
+            #contact{
+                display: none;
+            }
+            .nav>div:nth-child(2){
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #mid1{
+                background-color: white;
+                width: 100%;
+            }
+            #mid1>div{
+                width: 90%;
+            }
+            #mid1>div>div:nth-child(6){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 4;
+                gap: 15px 15px;
+            }
+            #mid1>div>div:nth-child(6) button{
+                width: 100%;
+            }
+            #mid0{
+            display: none;
+            }
+            #mid4>div:nth-child(1)~*{
+                width: 60%;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #mid5 >div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 80%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:699px){
+            
+            #contact{
+                display: none;
+            }
+            .nav>div:nth-child(2){
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #mid1{
+                background-color: white;
+                width: 100%;
+            }
+            #mid1>div{
+                width: 90%;
+            }
+            #mid1>div>div:nth-child(6){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 4;
+                gap: 15px 15px;
+            }
+            #mid1>div>div:nth-child(6) button{
+                width: 100%;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #mid0{
+                display: initial;
+            }
+            #mid{
+                display: none;
+            }
+            #mid3 > div{
+                width: 100%;
+            }
+            #mid3{
+                display: grid;
+                grid-template-columns:1;
+                grid-template-rows:2;
+                gap: 15px 15px;
+            }
+            #mid4>div:nth-child(1)~*{
+                width: 60%;
+                margin: auto;
+            }
+            #mid5>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 80%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:790px){
+            #mid6{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-row: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 80%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        <div id="offer">
+            <span>SAVE UP TO</span>
+            <span>50% OFF CLEARANCE*</span>
+            <span>USE CODE: EXTRA</span>
+        </div>
+    </a>
+    <div class="nav">
+        <div>
+            <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
+            <a href=""><img src="./location.svg" alt=""> Locaton</a>
+            <a href="./login.html"><img src="./user.svg" alt=""> Log in / Register</a>
+        </div>
+        <div>
+            <div id="logo">
+                <a href="./index.html"><img src="./Logo.png"></a>
+            </div>
+            <div id="links">
+                <a href="">Women</a>
+                <a href="./productsMen.html">Men</a>
+                <a href="">Kids</a>
+                <a href="">Originals</a>
+                <a href="">Accessories</a>
+                <a href="">Sale</a>
+                <a href="">Sustainability</a>
+            </div>
+            <div id="cart">
+                <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
+                <a href="./Emptycart.html"><img src="./cart.svg" alt=""></a>
+            </div>
+            <div class="hambuger">
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+            </div>
+        </div>
+        <div>
+            <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
+            <span>|</span>
+            <span><a href="">FREE RETURN</a> EVERYDAY</span>
+        </div>
+    </div>
+    <div id="mid1">
+        <div>
+            <h1>WINTER CLEARANCE</h1>
+            <p>SAVE UP TO</p>
+            <P>50% OFF*</P>
+            <div>TAKE AN EXTRA 30% OFF MARKDOWNS</div>
+            <p>USE CODE: EXTRA</p>
+            <div>
+                <button>Shop Women</button>
+                <button>shop Men</button>
+                <button>Shop Kids</button>
+                <button>Shop All</button>
+            </div>
+            <p>For more details see <a href="">Terms & Conditions</a></p>
+        </div>
+    </div>
+    <div id="mid">
+        <img id="a2" src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22WOriannaMidDarkSandSuedeOnsiteBannerDesktop1500x500?fmt=webp&wid=1500" alt="">
+    </div>
+    <div id="mid0">
+        <img src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22WOriannaMidDarkSandSuedeOnsiteBannerTablet705x397?fmt=webp&wid=768" alt="">
+    </div>
+    <div id="mid2">
+        <h1>
+            WINTER REBOOT
+        </h1>
+        <p>
+            Reworking a staple shoe in iconic style, meet our Orianna Mid boot. Crafted in responsibly sourced dark sand suede for a premium look, its chunky profile ticks the box for on-trend, while snug faux shearling linings keeps toes toasty when braving cooler climes. Clarks’ stitching detail nods to our heritage, making every tread timeless, too.
+        </p>
+        <div>
+            <button>
+                Shop Women's Boots
+            </button>
+            <button>
+                Shop Men's Boots
+            </button>
+        </div>
+    </div>
+    <div id="mid3">
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/BANWKS50and51OpalZipPeppleSuedeTabletBanner705x395px?fmt=webp&wid=705" alt="">
+            <div>
+                <h1>
+                    COMFORTABLY WARM
+                </h1>
+                <p>
+                    Keep warm, and look cool in Opal Sky, our Chelsea-inspired suede upper boot. Step out in feel- good style every time with our Ultimate Comfort footbed and slip-resistant sole.               
+                 </p>
+                <div class="child"> 
+                    <button>
+                        Shop Opal Sky On Sale
+                    </button>
+                    <button>
+                        Shop Women's Boots
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/AW22CostonWallyWPDarkSandWLinedOnsiteBannerTablet705x397?fmt=webp&wid=705" alt="">
+            <div>
+                <h1>
+                    WEATHER READY WITH A TWIST
+                </h1>
+                <p>
+                    A fresh take on the iconic Wallabee profile, our Corston Wally WP boot melds heritage style with a winter-ready twist. With a fully waterproof finish and snug faux fur linings - the weather's not dampening our plans!                
+                </p>
+                <div class="child">
+                    <button>
+                        Shop Corston Wally On Sale
+                    </button>
+                    <button>
+                        Shop Men'sWaterproof Boots
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid4">
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/ClarksHomepageBanner8thSt1500x500?fmt=webp&wid=1500" alt="">
+        </div>
+        <h1>
+            8TH STREET BY RONNIE FIEG FOR CLARKS ORIGINALS
+        </h1>
+        <p>
+            With nearly three decades of footwear industry expertise to his name, American designer and founder of Kith Ronnie Fieg is a bona fide classic kicks aficionado- making him the perfect partner for a Clarks Originals collab           
+        </p>
+        <div>
+            <button>
+                Shop 8th Street Collection
+            </button>
+            <button>
+                See The Features
+            </button>
+        </div>
+    </div>
+    <div id="mid5">
+        <div>
+            <span>SAFETY RECALL OF FIVE STYLES OF CLARKS WOMEN’S SHOES</span>
+            <a href=""><span>Click Here </span>for more information</a>
+        </div>
+    </div>
+    <div id="mid6">
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/MagnoliaZipBlackLeather852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Women</button>
+        </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/MNature5TieBeeswaxLeather852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Men</button>
+        </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/WebBannersDualGenderSashikoOriginalsHomepage852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Original</button>
+        </div>
+        <div>
+            <img src="https://clarks.scene7.com/is/image/Pangaea2Build/KWallabeeBootNavyCombi852x852px?&fmt=png-alpha" alt="">
+            <button>Shop Kids</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="offer2">
+        <span>Buy now. Pay Later. with</span>
+        <img src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo" alt="">
+        <a href="">Found out more</a>
+    </div>
+    <hr>
+    <div id="contact">
+        <div>
+            <a href="#">SCROLL TO TOP</a><span>|</span><a href="#">CONTACT US</a>
+        </div>
+        <div>
+            <span>SHOEFIE NEWSLATTER</span>
+            <form >
+                <input type="email">
+                <button>></button>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="parant1">
+            <div>
+                <div><p>DEPARTMENT</p></div>
+                <div><p>HELP</p></div>
+                <div><p>ABOUT US</p></div>
+                <div><p>SHOEFIE.COM</p></div>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.svg"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.svg"> </a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./youtube.svg"></a>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <a href="">WOMEN</a>
+                    <a href="">MEN</a>
+                    <a href="">ORIGINAL</a>
+                    <a href="">DISCOVER</a>
+                    <a href="">SALE</a>
+                </div>
+                <div>
+                    <a href="">Product Recall</a>
+                    <a href="">Cusotmer service</a>
+                    <a href="">Shipping 7 Delivery</a>
+                    <a href="">Order Lookup</a>
+                    <a href="">Return</a>
+                    <a href="">Compare At Pricing</a>
+                    <a href="">FAQs</a>
+                    <a href="">ID ME FAQs</a>
+                    <a href="">In-Store Rewards Program Terms</a>
+                    <a href="">In-Store Rewards Program FAQs</a>
+                    <a href="">Shoe Care Guide</a>
+                </div>
+                <div>
+                    <a href="">About Us</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Affiliate Program</a>
+                    <a href="">Blog</a>
+                    <a href="">Career</a>
+                    <a href="">California - Do Not Sell My Info</a>
+                    <a href="">California Supply Chains Act</a>
+                    <a href="">Corporate Responsibility</a>
+                    <a href="">Coronavirus Statement</a>
+                    <a href="">Technologies</a>
+                </div>
+                <div>
+                    <a href="">Gift Cards</a>
+                    <a href="">Gift Card Balance</a>
+                    <a href="">Size Guide</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer2">
+        <div>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+            <a href="">CCPA Privacy Policy</a>
+        </div>
+        <div>
+            <div>
+                <p>© C. & J. Clark International 2022. Clarks and the Clarks logo are registered trademarks of C. & J. Clark International Limited.</p>
+            </div>
+            <div>
+                <p>C&J Clark America, Inc., 140 Kendrick Street, Needham, MA 02494</p>
+            </div>
+            <div>
+                <img src="./paypal.png" alt="">
+                <img src="./visa.png" alt="">
+                <img src="./mastercard.png" alt="">
+                <img src="./discover.jpeg" alt="">
+                <img src="./AE.png" alt="">
+                <img src="./klarna.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let ham = document.querySelector(".hambuger");
+    let nav = document.querySelector("#links");
+    ham.addEventListener("click" , function(){
+        ham.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+    let sea = document.getElementById("searchfor");
+    sea.addEventListener("click" , function(){
+       window.location.href = "productsMen.html"; 
+    });
+</script>
+</html>

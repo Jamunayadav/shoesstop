@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+        }
+        a:nth-child(1){
+            text-decoration: none;
+            color: black;
+        }
+        #offer{
+            background-color: #efb9b9;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer>span{
+            font-size: 18px;
+        }
+        #offer>span:nth-child(2){
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 0 35px 0 35px;
+        }
+        .nav>div:nth-child(1){
+            height: 50px;
+            background-color:rgb(246, 244, 244);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .nav>div:nth-child(1)>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 13px;
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(1)>a>img{
+            height: 21px;
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(2){
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(100, 100, 111, 0.2);
+        }
+        #logo{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #links{
+            width: 40%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #links>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a{
+            margin-left: 0;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a>img{
+            width: 35px;
+        }
+        #cart{
+            width: 8%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 25%
+        }
+        .nav>div:nth-child(2)>div:nth-child(1){
+            width: 20%;
+        }
+        .nav>div:nth-child(2)>div:nth-child(1)>a>img{
+            width: 130px;
+            border-radius: 40px;
+        }
+        .nav>div:nth-child(3){
+            width: 98%;
+            margin: auto;
+            background-color: gainsboro;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav>div:nth-child(3)>span:nth-child(2){
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(3)>span>a{
+            color: rgb(87, 84, 84);
+        }
+        #logHeading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logHeading>p:nth-child(1){
+            font-size: 50px;
+            margin-left: 6%;
+            color: rgb(87, 84, 84);
+        }
+        #logHeading>div{
+            margin-right: 7%;
+            display: grid;
+            grid-template-columns: 1 , 100%;
+            width: 30%;
+        }
+        #logHeading>div p ,#logHeading>div>div {
+            text-align: end;
+        }
+        #logHeading>div p{
+            height: 8px;
+        }
+        #logHeading>div>div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            display: inline;
+            font-weight: bolder;
+        }
+        #logHeading>div>div img{
+            width: 15px;
+            height: 15px;
+        }
+        #logHeading>div>button{
+            width: 100%;
+            height: 40px;
+            margin-top: 25px;
+            background-color: #1E88E5;
+            border: 0;
+            color: white;
+        }
+        #mid1{
+            width: 98%;
+            margin: auto;
+            background-color: rgb(246, 244, 244);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(87, 84, 84);
+            margin: 50px 0 50px 0 ;
+        }
+        #mid1 img{
+            color: rgb(87, 84, 84);
+            margin-right: 15px;
+        }
+
+
+
+
+
+
+
+
+        #contact{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        #contact>div{
+            margin: 0 30px 0 150px;
+        }
+        #contact>div:nth-child(1)>span{
+            margin: 0 20px 0 20px;
+        }
+        #contact>div:nth-child(1)>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+        }
+        #contact>div:nth-child(2){
+            display: flex;
+            font-weight: bold;
+            width: 40%;
+        }
+        #contact>div:nth-child(2)>form{
+            margin-left: 20px;
+        }
+        #contact>div:nth-child(2)>form{
+            width: 60%;
+        }
+        #contact>div:nth-child(2)>form>input{
+            height: 25px;
+            width: 90%;
+        }
+        #contact>div:nth-child(2)>form>button{
+            height: 30px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84);
+        }
+        #footer{
+            background-color: rgba(100, 100, 111, 0.2);
+            padding-bottom: 60px;
+            margin-top: 0;
+        }
+        #footer>#parant1{
+            width: 90%;
+            margin: auto;
+        }
+        #footer>#parant1>div:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+        #footer>#parant1>div:nth-child(1)>div{
+            width: 70%;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+            justify-content: end;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1)>a>img{
+            width:25px;
+            margin: 0 5px 0 5px;
+        }
+        #footer>#parant1>div:nth-child(3){
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #footer>#parant1>div:nth-child(3)>div{
+            width: 70%;
+
+        }
+        #footer>#parant1>div:nth-child(3) a{
+            display: block;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+        }
+        #footer2{
+            display: flex;
+            background-color: rgb(47, 45, 45);
+        }
+        #footer2>div:nth-child(1){
+            width: 40%;
+            padding-bottom: 250px;
+        }
+        #footer2>div:nth-child(1){
+            text-align: center;
+            margin-top: 25px;
+
+        }
+        #footer2>div:nth-child(1)>a{
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+            font-size: 12px;
+        }
+        #footer2>div:nth-child(2){
+            width: 50%;
+            margin-left: 120px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(1){
+            margin-top: 28px;
+            color: white;
+            font-size:13px ;
+            width: 100%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(2){
+            color: white;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(1){
+            width: 16%;
+            margin-left: 20%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+            width: 18%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(3){
+            width: 8%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+            width: 10%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(5){
+            width: 7%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+            width: 12%;
+            border-radius: 10px;
+            height: 45px;
+        }
+        #main{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #mainchild{
+            width: 60%;
+            padding: 50px 25px 50px 25px;
+            display: flex;         
+        }
+        #mainchild>div:nth-child(2){
+            width: 40%;
+            padding: 50px 25px 50px 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 45px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div{ 
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0 15px 0;
+            
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div p{ 
+            text-align: center;
+            font-size: 20px;
+            background-color: white;
+            height: 42px;
+            width: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(87, 84, 84);
+            color:rgb(87, 84, 84) ;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1) h4 , #mainchild>div:nth-child(2)>div:nth-child(1) p{ 
+            height: 5px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1)>div button{ 
+            background-color: white;
+            font-size: 25px;
+            height: 45px;
+            width: 45px;
+            border: 1px solid rgb(87, 84, 84);
+            margin: 0 5px 0 5px;
+        }
+        #mainchild>div:nth-child(2)>div:nth-child(1) a{ 
+            color:rgb(117, 152, 165);
+        }
+        #main>div:nth-child(2){
+            width: 35%;
+        }
+        #main>div:nth-child(2)>div:nth-child(2),#main>div:nth-child(2)>div:nth-child(4),#main>div:nth-child(2)>div:nth-child(6){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #main>div:nth-child(2)>div:nth-child(6){
+            font-weight: bold;
+            font-size: 18px;
+            color: rgb(87, 84, 84);
+        }
+        #main>div:nth-child(2)>img{
+            width: 30%;
+        }
+        #main>div:nth-child(2)>button{
+            display: block;
+            width: 100%;
+            height: 40px;
+            background-color: #1E88E5;
+            border: 0;
+            color: white;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) {
+            margin: 25px 0 50px 0;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) p{
+            font-size: 14px;
+        }
+        #back{
+            width: 100%;
+            padding: 3px 0 3px 0;
+            background-color: rgba(100, 100, 111, 0.2);
+            margin: 15px 0 15px 0;
+            font-size 18px;
+        }
+        #back a{
+            margin-left: 2%;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) input{
+            width: 60%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84) ;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) button{
+            width: 30%;
+            height: 40px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84) ;
+            color:rgb(87, 84, 84) ;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+        #main>div:nth-child(2)>div:nth-child(8) button:hover{
+            background-color: grey ;
+            transition: all .5s linear;
+            color:white ;
+        }
+        
+        #main>div:nth-child(2) img{
+            margin-left: 30%;
+            width: 40%;
+            margin-bottom: 20px;
+        }
+        .hambuger{
+            display: none;
+        }
+        .bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
+        }
+        @media all and (min-width:650px) and (max-width:1050px){
+            .nav>div:nth-child(3){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .nav>div:nth-child(3)>span:nth-child(2){
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #main{
+                display: grid;
+                grid-template-columns: 1 ,1fr;
+                grid-template-rows: 2;
+
+            }
+            #main>div:nth-child(2){
+                width: 100%;
+            }
+            #contact{
+                display: none;
+            }
+            #main>div:nth-child(1)>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+        @media all and (min-width:350px) and (max-width:649px){
+            .nav>div:nth-child(3){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .nav>div:nth-child(3)>span:nth-child(2){
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #links.active{
+                left: 0;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+            #main{
+                display: grid;
+                grid-template-columns: 1 ,1fr;
+                grid-template-rows: 2;
+
+            }
+            #main>div:nth-child(1)>div{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            #main>div:nth-child(2){
+                width: 100%;
+            }
+            #contact{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        <div id="offer">
+            <span>SAVE UP TO</span>
+            <span>50% OFF CLEARANCE*</span>
+            <span>USE CODE: EXTRA</span>
+        </div>
+    </a>
+    <div class="nav">
+        <div>
+            <a href=""> <img src="./truck.svg" alt=""> Track Orders</a>
+            <a href=""><img src="./location.svg" alt=""> Locaton</a>
+            <a href="./login.html"><img src="./user.svg" alt=""> Log In / Register</a>
+        </div>
+        <div>
+            <div id="logo">
+                <a href="./index.html"><img src="./Logo.png"></a>
+            </div>
+            <div id="links">
+                <a href="">Women</a>
+                <a href="./productsMen.html">Men</a>
+                <a href="">Kids</a>
+                <a href="">Originals</a>
+                <a href="">Accessories</a>
+                <a href="">Sale</a>
+                <a href="">Sustainability</a>
+            </div>
+            <div id="cart">
+                <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
+                <a href=""><img src="./cart.svg" alt=""></a>
+            </div>
+            <div class="hambuger">
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+            </div>
+        </div>
+        <div>
+            <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
+            <span>|</span>
+            <span><a href="">FREE RETURN</a> EVERYDAY</span>
+        </div>
+    </div>
+    <div id="back">
+        <P><a href="./productPage.html">< CONTINUE BROWING</a></P>
+    </div>
+    <div id="logHeading">
+        <p>My SHOPPING BAG</p>
+        <div>
+            <p>BAG ID:679742264</p>
+            <div>
+                <p>need help? <img src="./help.svg"></p>
+            </div>
+            <button id="btn1">CHECK OUT</button>
+        </div>
+    </div>
+    <div id="mid1">
+        <img src="./truck.svg" alt="">
+        <span>FREE SHIPPING ON ALL $50+ ORDERS + FREE RETURNS EVERYDAY</span>
+    </div>
+    <div id="main">
+        <div>
+            <div id="mainchild">
+                <div>
+                    <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_1?fmt=webp" alt="error">
+                </div>
+                <div>
+                    <div>
+                        <h4>Nature X Lo</h4>
+                        <p>Grey Knit</p>
+                        <p>Size 12, Medium</p>
+                        <div>
+                            <button id="plus">+</button>
+                            <p id="quantity">1</p>
+                            <button id="minus">-</button>
+                        </div>
+                        <a href="">Remove</a>
+                    </div>
+                    <div>
+                        <p>$69.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>At least one product in cart is eligible for promotion. Enter code: <span>EXTRA40 below</span>.</p>
+            <div>
+                <p>
+                    Subtotal
+                </p>
+                <p id="subtotal">
+                    $69.99
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    Taxes
+                </p>
+                <p>
+                    $00.00
+                </p>
+            </div>
+            <hr>
+            <div>
+                <p>Estimated Total</p>
+                <p id="total">$69.99</p>
+            </div>
+            <hr>
+            <div>
+                <p>Enter Your CPromo Code And Click Apply</p>
+                <div>
+                    <input type="text" id="cu">
+                    <button id="ap">APPLY</button>
+                </div>
+                <p id="status">
+
+                </p>
+            </div>
+            <p>Nurses, Medical Professionals, Military, First Responders, and Airline Employees receive a discount with ID.me</p>
+            <img src="https://s3.amazonaws.com/idme/buttons/v4/verify-with-idme.png" alt="">
+            <button  id="btn2">CHECK OUT</button>
+        </div>
+    </div>
+
+
+
+    <hr>
+    <div id="contact">
+        <div>
+            <a href="#">SCROLL TO TOP</a><span>|</span><a href="#">CONTACT US</a>
+        </div>
+        <div>
+            <span>SHOEFIE NEWSLATTER</span>
+            <form >
+                <input type="email">
+                <button>></button>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="parant1">
+            <div>
+                <div><p>DEPARTMENT</p></div>
+                <div><p>HELP</p></div>
+                <div><p>ABOUT US</p></div>
+                <div><p>SHOEFIE.COM</p></div>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.svg"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.svg"> </a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./youtube.svg"></a>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <a href="">WOMEN</a>
+                    <a href="">MEN</a>
+                    <a href="">ORIGINAL</a>
+                    <a href="">DISCOVER</a>
+                    <a href="">SALE</a>
+                </div>
+                <div>
+                    <a href="">Product Recall</a>
+                    <a href="">Cusotmer service</a>
+                    <a href="">Shipping 7 Delivery</a>
+                    <a href="">Order Lookup</a>
+                    <a href="">Return</a>
+                    <a href="">Compare At Pricing</a>
+                    <a href="">FAQs</a>
+                    <a href="">ID ME FAQs</a>
+                    <a href="">In-Store Rewards Program Terms</a>
+                    <a href="">In-Store Rewards Program FAQs</a>
+                    <a href="">Shoe Care Guide</a>
+                </div>
+                <div>
+                    <a href="">About Us</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Affiliate Program</a>
+                    <a href="">Blog</a>
+                    <a href="">Career</a>
+                    <a href="">California - Do Not Sell My Info</a>
+                    <a href="">California Supply Chains Act</a>
+                    <a href="">Corporate Responsibility</a>
+                    <a href="">Coronavirus Statement</a>
+                    <a href="">Technologies</a>
+                </div>
+                <div>
+                    <a href="">Gift Cards</a>
+                    <a href="">Gift Card Balance</a>
+                    <a href="">Size Guide</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer2">
+        <div>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+            <a href="">CCPA Privacy Policy</a>
+        </div>
+        <div>
+            <div>
+                <p>© C. & J. Clark International 2022. Clarks and the Clarks logo are registered trademarks of C. & J. Clark International Limited.</p>
+            </div>
+            <div>
+                <p>C&J Clark America, Inc., 140 Kendrick Street, Needham, MA 02494</p>
+            </div>
+            <div>
+                <img src="./paypal.png" alt="">
+                <img src="./visa.png" alt="">
+                <img src="./mastercard.png" alt="">
+                <img src="./discover.jpeg" alt="">
+                <img src="./AE.png" alt="">
+                <img src="./klarna.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click" , function(){
+        alert("Please Log In First");
+
+    });
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click" , function(){
+        alert("Please Log In First");
+        
+    });
+    let counter = 1;
+    let total = 0;
+    let plus = document.getElementById("plus");
+    plus.addEventListener("click" , function(){
+        ++counter;
+        document.getElementById("quantity").innerText = counter;
+        document.getElementById("quantity").innerText = counter;
+        total = 69.99*Number(counter).toFixed(2);
+        total=total.toFixed(2);
+        document.getElementById("subtotal").innerText=total;
+        document.getElementById("total").innerText=total;
+    });
+    let minus = document.getElementById("minus");
+    minus.addEventListener("click" , function(){
+        if(counter>1){
+            --counter;
+            document.getElementById("quantity").innerText = counter;
+            document.getElementById("quantity").innerText = counter;
+            total = 69.99*Number(counter);
+            total=total.toFixed(2);
+            document.getElementById("subtotal").innerText=total;
+            document.getElementById("total").innerText=total;
+        }
+    });
+    let cupon = document.getElementById("cu");
+    let apply =document.getElementById("ap");
+    let flag2 = true;
+    apply.addEventListener("click" , function(){
+        if(cupon.value === "EXTRA" && flag2 === true){
+            total = 69.99*Number(counter);
+            total = total*.5;
+            total=total.toFixed(2);
+            document.getElementById("subtotal").innerText=total;
+            document.getElementById("total").innerText=total;
+            alert("Discount Applied");
+            document.getElementById("status").innerText = "COUPON APPLIED";
+            flag2 = false;
+        }
+        else if(cupon.value === "EXTRA" && flag2 === false){
+            alert("Already Applied");
+        }
+        else{
+            alert("Invalid Entry");
+        }
+    });
+    let ham = document.querySelector(".hambuger");
+    let nav = document.querySelector("#links");
+    ham.addEventListener("click" , function(){
+        ham.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+</script>
+</html>

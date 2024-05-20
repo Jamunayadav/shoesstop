@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Shoefie Official Site/Nature X Lo</title>
+    <style>
+        body{
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+        }
+        a:nth-child(1){
+            text-decoration: none;
+            color: black;
+        }
+        #offer{
+            background-color: #efb9b9;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #offer>span{
+            font-size: 18px;
+        }
+        #offer>span:nth-child(2){
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 0 35px 0 35px;
+        }
+        .nav>div:nth-child(1){
+            height: 50px;
+            background-color:rgb(246, 244, 244);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .nav>div:nth-child(1)>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 13px;
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(1)>a>img{
+            height: 21px;
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(2){
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(100, 100, 111, 0.2);
+            
+        }
+        #logo{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #links{
+            width: 40%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #links>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a{
+            margin-left: 0;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+            font-size: 15px;
+        }
+        #cart>a>img{
+            width: 35px;
+        }
+        #cart{
+            width: 8%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 25%
+        }
+        .nav>div:nth-child(2)>div:nth-child(1){
+            width: 20%;
+        }
+        .nav>div:nth-child(2)>div:nth-child(1)>a>img{
+            width: 130px;
+            border-radius: 40px;
+        }
+        .nav>div:nth-child(3){
+            width: 98%;
+            margin: auto;
+            background-color: gainsboro;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav>div:nth-child(3)>span:nth-child(2){
+            margin: 0 15px 0 15px;
+        }
+        .nav>div:nth-child(3)>span>a{
+            color: rgb(87, 84, 84);
+        }
+        #visited{
+            background-color:  rgb(246, 244, 244);
+            height: 35px;
+            display: flex;
+            align-items:center;
+            margin-top: 10px;
+        }
+        #visited>a:nth-child(1){
+            margin-left: 10%;
+        }
+        #visited>a>button{
+            margin: 0 5px 0 5px;
+            border: 0px solid rgb(87, 84, 84);
+            height: 25px;
+            border-radius: 3px;
+            background-color: white;
+        }
+        #visited>a>button:hover{
+            cursor: pointer;
+        }#contact{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        #contact>div{
+            margin: 0 30px 0 150px;
+        }
+        #contact>div:nth-child(1)>span{
+            margin: 0 20px 0 20px;
+        }
+        #contact>div:nth-child(1)>a{
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+        }
+        #contact>div:nth-child(2){
+            display: flex;
+            font-weight: bold;
+            width: 40%;
+        }
+        #contact>div:nth-child(2)>form{
+            margin-left: 20px;
+        }
+        #contact>div:nth-child(2)>form{
+            width: 60%;
+        }
+        #contact>div:nth-child(2)>form>input{
+            height: 25px;
+            width: 90%;
+        }
+        #contact>div:nth-child(2)>form>button{
+            height: 30px;
+            background-color: white;
+            border: 1px solid rgb(87, 84, 84);
+        }
+        #mid2{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            background-color:rgb(248, 247, 247);
+            padding:25px 25px 30px 0;
+        }
+        #mid2>div:nth-child(1){
+            width: 55%;
+            padding-left: 25px;
+            font-size: 14px;
+        }
+        #mid2>div:nth-child(2){
+            width: 28%;
+            margin-top: 25px;
+            font-size: 13px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 0 35px 0 35px;
+        }
+        #mid2>div:nth-child(2)>div>div:nth-child(1){
+            width: 30px;
+            height: 35px;
+            text-align: center;
+        }
+        #mid2>div:nth-child(2)>div>div:nth-child(2){
+           margin-left: 25px;
+           margin-top: 0;
+        }
+        #mid2>div:nth-child(2)>div{
+            display: flex
+        }
+        #mid2>div:nth-child(3){
+            width: 12%;
+            background-color:rgb(248, 247, 247); ;
+            height: 50px;
+            text-align: center;
+            position:relative;
+            right: 23%;
+            top: -8px;
+        }
+
+
+
+
+        #footer{
+            background-color: rgba(100, 100, 111, 0.2);
+            padding-bottom: 60px;
+        }
+        #footer>#parant1{
+            width: 90%;
+            margin: auto;
+        }
+        #footer>#parant1>div:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+        #footer>#parant1>div:nth-child(1)>div{
+            width: 70%;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+            justify-content: end;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1){
+            display: flex;
+        }
+        #footer>#parant1>div:nth-child(1)>div:nth-last-child(1)>a>img{
+            width:25px;
+            margin: 0 5px 0 5px;
+        }
+        #footer>#parant1>div:nth-child(3){
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #footer>#parant1>div:nth-child(3)>div{
+            width: 70%;
+
+        }
+        #footer>#parant1>div:nth-child(3) a{
+            display: block;
+            text-decoration: none;
+            color: rgb(87, 84, 84);
+        }
+        #footer2{
+            display: flex;
+            background-color: rgb(47, 45, 45);
+        }
+        #footer2>div:nth-child(1){
+            width: 40%;
+            padding-bottom: 250px;
+        }
+        #footer2>div:nth-child(1){
+            text-align: center;
+            margin-top: 25px;
+
+        }
+        #footer2>div:nth-child(1)>a{
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+            font-size: 12px;
+        }
+        #footer2>div:nth-child(2){
+            width: 50%;
+            margin-left: 120px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(1){
+            margin-top: 28px;
+            color: white;
+            font-size:13px ;
+            width: 100%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(2){
+            color: white;
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(1){
+            width: 16%;
+            margin-left: 20%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(2){
+            width: 18%;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(3){
+            width: 8%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(4){
+            width: 10%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(5){
+            width: 7%;
+            height: 45px;
+        }
+        #footer2>div:nth-child(2)>div:nth-child(3)>img:nth-child(6){
+            width: 12%;
+            border-radius: 10px;
+            height: 45px;
+        }
+        #mid1{
+            width:100%;
+            margin: 25px 0 25px 0;
+            display: flex;
+        }
+        #one{
+            width: 60%;
+            text-align: center;
+            display: flex;
+        }
+        #arr{
+            width: 20%;
+            margin-left: 80px;
+        }
+        #arr>button{
+            width: 80%;
+            height: 25px;
+            background-color: white;
+            border: 0;
+        }
+        #arr img{
+            width: 80%;
+        }
+        #display{
+            width:80%;
+        }
+        #display img{
+            width: 90%;
+            height: 100%;
+        }
+        #arr>button>img{
+            width: 15px;
+        }
+        #two{
+            width: 33%;
+        }
+        #two>h2{
+            height: 20px;
+        }
+        #two>p{
+            height: 10px;
+        }
+        #two>div:nth-child(3)>img{
+            width: 3%;
+        }
+        #two>div:nth-child(3){
+            margin-bottom: 25px;
+            display: flex;
+        }
+        #two>div:nth-child(5){
+            display: flex;
+        }
+        #two>span{
+            font-size: 18px;
+        }
+        #two>span>span{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        #two>div:nth-child(5){
+            margin: 25px 0 25px 0;
+        }
+        #two>div:nth-child(5)>img{
+            width: 12%;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        #two>div:nth-child(5)>img{
+            width: 12%;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin-left: 8px;
+        }
+        #two span:nth-child(6){
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #two span:nth-child(6)>span{
+            margin-right: 15%;
+            color: skyblue;
+        }
+        #two>div:nth-child(7){
+            margin: 25px 0 25px 0 ;
+            display: grid;
+            grid-template-columns: repeat(5,12%);
+            grid-template-rows: repeat(3,45px);
+            gap:10px 10px;
+
+        }
+        #two>div:nth-child(7)>button{
+            background-color: white;
+            color: rgb(89, 86, 86);
+            border-radius: 10px;
+            border: 1px solid rgb(89, 86, 86);
+        }
+        #two>div:nth-child(7)>button:hover{
+            cursor: pointer;
+           background-color: aliceblue;
+        }
+        #two>p:nth-child(9)>button{
+            width: 18%;
+            height: 55px;
+            background-color: white;
+            color: rgb(89, 86, 86);
+            border-radius: 10px;
+            border: 1px solid rgb(89, 86, 86);
+        }
+        #two>p:nth-child(9)>button{
+            cursor: pointer;
+            background-color: aliceblue;
+        }
+        #two>#check{
+            width: 87% ;
+            height: 50px;
+        }
+        #two>#check>button{
+            margin-top: 50px;
+            margin-bottom: 25px;
+            height: 100%;
+            width: 100%;
+            font-size: 23px;
+            background-color: #1E88E5;
+            color: white;
+            font-weight: 500;
+        }
+        #two>div:nth-last-child(1){
+            width: 87% ;
+            margin-top: 70px;
+            background-color: rgb(252, 177, 190);
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+        #two>div:nth-last-child(1) img{
+            margin-left: 0px;
+            width: 20%; 
+            height: 50px;
+        }
+        #two>div:nth-last-child(1)>span>a{
+            margin-left: 25px;
+        }
+        #mid3{
+            width: 90%;
+            margin:auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #mid3>div:nth-child(1){
+            width: 49%;
+        }
+        #mid3>div:nth-child(1)>button{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 0;
+            font-size: 25px;
+            color: rgb(96, 93, 93);
+        }
+        #mid3>div:nth-child(1)>button:hover{
+            cursor: pointer;
+        }
+        #mid3>div:nth-child(2){
+            width: 49%;
+        }
+        #mid3>div:nth-child(2)>button{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            border: 0;
+            font-size: 25px;
+            color: rgb(96, 93, 93);
+        }
+        #mid4>table{
+            width: 100%;
+            display: none;
+        }
+        #mid4>table tr td{
+            width: 100%;
+             
+            text-align: start;
+        }
+        #mid4>table tr:nth-child(even){
+            background-color:rgb(244, 244, 244);
+        }
+        #mid4>table>tbody>tr{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        #mid4table>tbody>tr>td:nth-child(2){
+            font-weight: bolder;
+
+        }
+        #mid5{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 25px 0 25px 0;
+        }
+        #mid5>div:nth-child(1){
+            background-color:rgb(244, 244, 244);
+            text-align: center;
+            width: 30%;
+            height: 300px;
+        }
+        #mid5>div:nth-child(1)>div{
+            width: 50%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: 2;
+            gap: 10px 10px;
+        }
+        #mid5>div:nth-child(1)>div img{
+            width: 100%;
+        }
+        #mid5>div:nth-child(2){
+            background-color:rgb(244, 244, 244);
+            text-align: center;
+            width: 35%;
+            height: 300px;
+            padding: 25px 15px 25px 15px;
+            color: rgb(89, 86, 86);;
+        }
+        #mid5{
+            display: none;
+        }
+        #pay:hover{
+            cursor: pointer;
+        }
+        #atc:hover{
+            cursor: pointer;
+        }
+        .hambuger{
+            display: none;
+        }
+        .bar{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+            -webkit-transition:all .3s ease-in-out ;
+            transition: all .3s ease-in-out ; 
+        }
+        @media all and (min-width:650px) and (max-width:1050px){
+            .nav>div:nth-child(3){
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+            }
+            .nav>div:nth-child(3)>span:nth-child(2){
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 92%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links.active{
+                left: 0;
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+            
+        }
+        @media all and (min-width:350px) and (max-width:649px){
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            
+            #mid1{
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 2;
+                gap: 10px 10px;
+            }
+            #mid1>#one{
+                display: grid;
+                grid-template-columns: 1 , 1fr;
+                grid-template-rows: 2;
+            }
+            #mid1 div{
+                width: 100%;
+            }
+            #contact{
+                display: none;
+            }
+            #offer{
+                padding: 25px 0 25px 0;
+            }
+            #mid2{
+                display: grid;
+                grid-template-columns: 1 , 1fr;
+                grid-template-rows: 2;
+            }
+            #mid2 *{
+                width: 120%;
+            }
+            .hambuger{
+                display: block;
+            }
+            .hambuger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hambuger.active .bar:nth-child(1){
+                transform:translateY(8px) rotate(45deg) ;
+            }
+            .hambuger.active .bar:nth-child(3){
+                transform:translateY(-8px) rotate(-45deg) ;
+            }
+            #links{
+                position: fixed;
+                top: 175px;
+                gap: 15px;
+                flex-direction: column;
+                width: 80%;
+                text-align: center;
+                transition: all .5s linear;
+                background-color: white;
+                clear: both;
+                left: 100%;
+            }
+            #cart{
+                margin-right:40% ;
+           
+            }
+            #links.active{
+                left: 0;
+            }
+            #links a{
+                font-size: 20px;
+                background-color:#efb9b9;
+                width: 100%;
+                height:55px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        <div id="offer">
+            <span>SAVE UP TO</span>
+            <span>50% OFF CLEARANCE*</span>
+            <span>USE CODE: EXTRA</span>
+        </div>
+    </a>
+    <div class="nav">
+        <div>
+            <a href=""> <img src="./truck.svg" alt="">Track Orders</a>
+            <a href=""><img src="./location.svg" alt=""> Locaton</a>
+            <a href="./productsMen.html"><img src="./user.svg" alt=""> Log Out</a>
+        </div>
+        <div>
+            <div id="logo">
+                <a href="./index.html"><img src="./Logo.png"></a>
+            </div>
+            <div id="links">
+                <a href="">Women</a>
+                <a href="./afterLoginPage.html">Men</a>
+                <a href="">Kids</a>
+                <a href="">Originals</a>
+                <a href="">Accessories</a>
+                <a href="">Sale</a>
+                <a href="">Sustainability</a>
+            </div>
+            <div id="cart">
+                <button id="searchfor" style="background-color: white; border: 0;"><img style="width: 35px; background-color: white;" src="./search.svg" alt=""></button>
+                <a href="./AfterLogInCart.html"><img src="./cart.svg" alt=""></a>
+            </div>
+            <div class="hambuger">
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+                <span class="bar">
+        
+                </span>
+            </div>
+        </div>
+        <div>
+            <span><a href="">FREE SHIPPING</a> ON ORDER OVER $75</span>
+            <span>|</span>
+            <span><a href="">FREE RETURN</a> EVERYDAY</span>
+        </div>
+    </div>
+    <div id="visited">
+       <a href="./index.html"><button>HOME</button></a>
+       <a href="./productsMen.html"><button>MEN</button></a>
+       <a href="./productsMen.html"><button>SNEAKERS</button></a>
+       <a href="./productPage.html"><button>Nature X Lo</button></a>
+    </div>
+    <div id="mid1">
+        <div id="one">
+            <div id="arr">
+                <button id="up"><img src="./up-arrow.svg" alt=""></button>
+                <div id="images">
+
+                </div>
+                <button id="down"><img src="./down-arrow.svg" alt=""></button>
+            </div>
+            <div id="display">
+
+            </div>
+        </div>
+        <div id="two">
+            <h2>Nature X Lo Grey Knit</h2>
+            <p>$3200</p>
+            <div>
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <img src="./star.svg" alt="">
+                <span>(1)</span>
+            </div>
+            <span>COLOR <span>Gray Knit</span></span>
+            <div>
+                <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26169143_W_1?wid=80&fmt=webp" alt="">
+                <img src="https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_1?wid=80&fmt=webp" alt="">
+            </div>
+            <span>SELECT SIZE <span><a href="#">Size Guide</a></span></span>
+            <div>
+                <button onclick="click1()">7</button>
+                <button onclick="click2()">7½</button>
+                <button onclick="click3()">8</button>
+                <button onclick="click4()">8½</button>
+                <button onclick="click5()">9</button>
+                <button onclick="click6()">9½</button>
+                <button onclick="click7()" id="b7">10</button>
+                <button onclick="click8()">10½</button>
+                <button onclick="click9()">11</button>
+                <button onclick="click10()" id="b10">11½</button>
+                <button onclick="click11()" >12</button>
+                <button onclick="click12()" id="b12">13</button>
+            </div>
+            <span>SELECT WIDTH</span>
+            <p><button>MEDIUM</button></p>
+            <div id="check">
+                <button id="atc">Add to shopping bag</button>
+            </div>
+            <div>
+                <img src="https://clarks.scene7.com/is/content/Pangaea2Build/IC_klarnaLogo" alt="">
+                <span>4 Interest-free payments of $17.49<a href="#">Learn more</a> </span>
+
+            </div>
+        </div>
+    </div>
+    <div id="mid2">
+        <div>
+            <h2>Product description</h2>
+            <p>Combining expert craftsmanship with technological vision, our Nature X Lo shoe is the ultimate everyday sneaker. With innovative soles that flex as you move, targeted cushioning and breathable knitted grey uppers, feel light and move freely without compromising on style.</p>
+            <p>Last offered at $110.00 on 10/26/2022.</p>
+            <ul>
+                <li>Premium, breathable engineered part-recycled grey knitted upper</li>
+                <li>Removable molded footbed maximizes air circulation and gives customizable all-day comfort</li>
+                <li>Strobel construction creates a lightweight and flexible feel</li>
+                <li>Heel tab assists easy on/off</li>
+                <li>Strategically engineered, part-recycled flex and compression EVA outsole uses unique T-shaped grooves to cushion and absorb shock</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h4>
+                        FREE
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        (on $50+) FedEx SmartPost Delivery (Within 7-10 business days)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $8.95
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        FedEx Ground Delivery (Within 3-6 business days)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $18.00
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        FedEx 2 Day Delivery (Within 2 business days. Order before 2pm EST)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $26.00
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        FedEx Next Day Delivery (Within 1 business day. Order before 2pm EST)*
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        $20.00
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        USPS Delivery (Within 8-12 business days. Available for APO/FPO and US Territory addresses only)                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>
+                        FREE
+                    </h4>
+                </div>
+                <div>
+                    <p>
+                        Return on all items
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p>* Orders delivering to Hawaii & Alaska must select Express shipping. We are unable to ship FedEx Ground, Next Day or Two Day orders to a PO Box.</p>
+            </div>
+        </div>
+        <div>
+            <h4>Delivery And Return</h4>
+        </div>
+    </div>
+    <div id="mid3">
+        <div>
+            <button id="show" onclick="click222()">PRODUCT DETAILS</button>
+            <hr>
+        </div>
+        <div id="payment">
+            <button id="pay" onclick="click111()">PAYMENT AND RETURN</button>
+            <hr>
+        </div>
+    </div>
+    <div id="mid4">
+        <table id="table">
+            <tbody>
+                <tr>
+                    <td>
+                        Upper Material
+                    </td>
+                    <td>
+                        Textile
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lining Material
+                    </td>
+                    <td>
+                        Textile
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sole Material
+                    </td>
+                    <td>
+                        EVA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fastening Type
+                    </td>
+                    <td>
+                        Lace
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Removalbe Insole
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div id="mid5">
+        <div>
+            <h1>PAYMENT OPTION</h1>
+            <p>Payments are handled securely by CyberSource. We accept the following payments:</p>
+            <div>
+                <img src="./paypal.png" alt="">
+                <img src="./visa.png" alt="">
+                <img src="./mastercard.png" alt="">
+                <img src="./discover.jpeg" alt="">
+                <img src="./AE.png" alt="">
+                <img src="./klarna.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h1>RETURNS ARE FREE</h1>
+            <p>Simply return your unworn product within 60 days days of purchase for a full refund. Online orders can be returned either by mail or by visiting a Clarks Retail Store.</p>
+            <p>Online orders paid for using Klarna need to be returned to our warehouse where you will be refunded to your original form of payment.</p>
+            <a href="#">More returns information</a>
+        </div>
+
+    </div>
+    <hr>
+    <div id="contact">
+        <div>
+            <a href="#">SCROLL TO TOP</a><span>|</span><a href="#">CONTACT US</a>
+        </div>
+        <div>
+            <span>SHOEFIE NEWSLATTER</span>
+            <form >
+                <input type="email">
+                <button>></button>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="parant1">
+            <div>
+                <div><p>DEPARTMENT</p></div>
+                <div><p>HELP</p></div>
+                <div><p>ABOUT US</p></div>
+                <div><p>SHOEFIE.COM</p></div>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./facebook.svg"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./instagram.svg"> </a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="./youtube.svg"></a>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <a href="">WOMEN</a>
+                    <a href="./productsMen.html">MEN</a>
+                    <a href="">ORIGINAL</a>
+                    <a href="">DISCOVER</a>
+                    <a href="">SALE</a>
+                </div>
+                <div>
+                    <a href="">Product Recall</a>
+                    <a href="">Cusotmer service</a>
+                    <a href="">Shipping 7 Delivery</a>
+                    <a href="">Order Lookup</a>
+                    <a href="">Return</a>
+                    <a href="">Compare At Pricing</a>
+                    <a href="">FAQs</a>
+                    <a href="">ID ME FAQs</a>
+                    <a href="">In-Store Rewards Program Terms</a>
+                    <a href="">In-Store Rewards Program FAQs</a>
+                    <a href="">Shoe Care Guide</a>
+                </div>
+                <div>
+                    <a href="">About Us</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Affiliate Program</a>
+                    <a href="">Blog</a>
+                    <a href="">Career</a>
+                    <a href="">California - Do Not Sell My Info</a>
+                    <a href="">California Supply Chains Act</a>
+                    <a href="">Corporate Responsibility</a>
+                    <a href="">Coronavirus Statement</a>
+                    <a href="">Technologies</a>
+                </div>
+                <div>
+                    <a href="">Gift Cards</a>
+                    <a href="">Gift Card Balance</a>
+                    <a href="">Size Guide</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer2">
+        <div>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+            <a href="">CCPA Privacy Policy</a>
+        </div>
+        <div>
+            <div>
+                <p>© C. & J. Clark International 2022. Clarks and the Clarks logo are registered trademarks of C. & J. Clark International Limited.</p>
+            </div>
+            <div>
+                <p>C&J Clark America, Inc., 140 Kendrick Street, Needham, MA 02494</p>
+            </div>
+            <div>
+                <img src="./paypal.png" alt="">
+                <img src="./visa.png" alt="">
+                <img src="./mastercard.png" alt="">
+                <img src="./discover.jpeg" alt="">
+                <img src="./AE.png" alt="">
+                <img src="./klarna.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let imgs = [
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_1?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_10?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_11?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_12?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_13?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_14?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_15?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_16?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_17?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_2?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_3?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_4?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_5?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_6?wid=180&hei=180&fmt=webp",
+        "https://clarks.scene7.com/is/image/Pangaea2Build/26169144_W_7?wid=180&hei=180&fmt=webp",
+        ""
+    ];
+    for(let i = 0 ; i<5 ; ++i){
+        let c = document.createElement("img");
+        c.setAttribute("src" , imgs[i]);
+        document.getElementById("images").append(c);
+    }
+    let counter = 0;
+    let img2 = document.createElement("img");
+    img2.setAttribute("src" , imgs[counter]);
+    document.getElementById("display").append(img2);
+    let btndown = document.getElementById("down");
+    btndown.addEventListener("click" , function(){
+        if(counter<15){
+            if(counter===4){
+            document.getElementById("images").innerHTML="";
+            for(let i = 5 ; i<10 ; ++i){
+                let c = document.createElement("img");
+                c.setAttribute("src" , imgs[i]);
+                document.getElementById("images").append(c);
+            }
+        }
+        if(counter===9){
+            document.getElementById("images").innerHTML="";
+            for(let i = 10 ; i<15 ; ++i){
+                let c = document.createElement("img");
+                c.setAttribute("src" , imgs[i]);
+                document.getElementById("images").append(c);
+            }
+        }
+        ++counter;
+        console.log(counter);
+        if(counter<15){
+            img2.setAttribute("src" , imgs[counter]);
+            document.getElementById("display").append(img2);
+        }
+        }
+    });
+    let btnup =document.getElementById("up");
+    btnup.addEventListener("click" ,function(){
+        if(counter>=0){
+            img2.setAttribute("src" , imgs[counter]);
+            document.getElementById("display").append(img2);
+            --counter
+        }
+    });
+    function click222(){
+        if(document.getElementById("table").style.display="none"){
+            document.getElementById("table").style.display="initial"
+            document.getElementById("table").style.width="100%"
+        }else{
+            document.getElementById("table").style.display="none"
+        }
+    }
+    function click111(){
+        if(document.getElementById("mid5").style.display="none"){
+            document.getElementById("mid5").style.display="initial"
+            
+        }else{
+            document.getElementById("mid5").style.display="none"
+        }
+    }
+    let flag1 = false;
+    function click1(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click2(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click3(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click4(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click5(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click6(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click7(){
+        document.getElementById("b7").style.backgroundColor = "aliceblue";
+        flag1=true;
+    }
+    function click8(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click9(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click10(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click11(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    function click12(){
+        alert("Not Available");
+        flag1 = false;
+    }
+    let addtocard = document.getElementById("atc");
+    addtocard.addEventListener("click", function(){
+        if(flag1 === false){
+            alert("Please select the available size");
+        }else{
+            alert("Added to bag");
+            window.location.href = "AfterLogInCart.html";
+        }
+    });
+    let ham = document.querySelector(".hambuger");
+    let nav = document.querySelector("#links");
+    ham.addEventListener("click" , function(){
+        ham.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+    let sea = document.getElementById("searchfor");
+        sea.addEventListener("click" , function(){
+        window.location.href = "afterLoginPage.html"; 
+    });
+</script>
+</html>
